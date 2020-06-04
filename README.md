@@ -2,6 +2,7 @@
 Application to randomly select an Angel Card. 
 
 TODO: 
+- BUG: AUTO LAYOUT 
 - Add flip animation 
 - allow to flip back to the back 
 - See More button to puil up additional text

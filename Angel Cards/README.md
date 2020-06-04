@@ -1,5 +1,5 @@
-# Angel-Cards
-Application to randomly select an Angel Card. 
+This application picks random angel cards.
+
 
 TODO: 
 - Add flip animation 
@@ -10,4 +10,3 @@ TODO:
 - New FEATURE: 
   - Allow a view where user can select from mutliple cards and then select from that 
 - Add autolayout 
-

@@ -18,85 +18,60 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Y94-AZ-aow">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="yvu-8S-uhQ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLs-e4-B2o" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="87.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLs-e4-B2o" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="87.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angel Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlB-Yj-g8Z">
-                                                <rect key="frame" x="144.5" y="29" width="125" height="29.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="LlB-Yj-g8Z" firstAttribute="centerY" secondItem="dLs-e4-B2o" secondAttribute="centerY" id="FsR-2c-HBc"/>
-                                            <constraint firstItem="LlB-Yj-g8Z" firstAttribute="top" secondItem="dLs-e4-B2o" secondAttribute="top" constant="29" id="UBb-4r-wAp"/>
-                                            <constraint firstItem="LlB-Yj-g8Z" firstAttribute="centerX" secondItem="dLs-e4-B2o" secondAttribute="centerX" id="zdI-nK-WVU"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-60-TMf" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="119.5" width="414" height="554.5"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angelcardback" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1T-Wp-kCL">
-                                                <rect key="frame" x="8" y="36" width="398" height="480"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                <viewLayoutGuide key="safeArea" id="gwr-Ls-MdY"/>
-                                            </imageView>
-                                        </subviews>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJq-q6-gyK" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="706" width="414" height="112"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="16e-zv-gN9">
-                                                <rect key="frame" x="129" y="13" width="156" height="86"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXy-30-bcV">
-                                                        <rect key="frame" x="35.5" y="0.0" width="85" height="39"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                        <state key="normal" title="Flip Card">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqk-Dr-VDd"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2w-IV-v4y">
-                                                        <rect key="frame" x="0.0" y="47" width="156" height="39"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                        <state key="normal" title="Pick a New Card">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="pickANewCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wh-CV-Dbk"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="16e-zv-gN9" firstAttribute="centerX" secondItem="qJq-q6-gyK" secondAttribute="centerX" id="AFm-33-Zc4"/>
-                                            <constraint firstItem="16e-zv-gN9" firstAttribute="centerY" secondItem="qJq-q6-gyK" secondAttribute="centerY" id="QMl-MQ-OSz"/>
-                                            <constraint firstItem="16e-zv-gN9" firstAttribute="top" secondItem="qJq-q6-gyK" secondAttribute="top" constant="13" id="pKY-8m-0F4"/>
-                                        </constraints>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Angel Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlB-Yj-g8Z">
+                                        <rect key="frame" x="144.5" y="29" width="125" height="29.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                            </stackView>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJq-q6-gyK" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="750" width="414" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2w-IV-v4y">
+                                        <rect key="frame" x="8" y="36" width="179" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Pick a New Card">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pickANewCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wh-CV-Dbk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXy-30-bcV">
+                                        <rect key="frame" x="296" y="37" width="110" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Flip Card">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqk-Dr-VDd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angelcardback" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1T-Wp-kCL">
+                                <rect key="frame" x="20" y="161" width="374" height="574"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yvu-8S-uhQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="26J-YC-v9F"/>
-                            <constraint firstItem="yvu-8S-uhQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2aG-1c-5l7"/>
                             <constraint firstItem="Y94-AZ-aow" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="HwJ-St-NZD"/>
                             <constraint firstItem="Y94-AZ-aow" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RcM-53-Yu1"/>
-                            <constraint firstItem="yvu-8S-uhQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xjq-Zy-tdt"/>
                             <constraint firstItem="Y94-AZ-aow" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j0O-pq-KBh"/>
                             <constraint firstAttribute="bottom" secondItem="Y94-AZ-aow" secondAttribute="bottom" id="pdd-RZ-EQY"/>
-                            <constraint firstItem="yvu-8S-uhQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tee-fT-YfD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -106,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66.964285714285708" y="126.08695652173914"/>
+            <point key="canvasLocation" x="-68.115942028985515" y="125.89285714285714"/>
         </scene>
     </scenes>
     <resources>

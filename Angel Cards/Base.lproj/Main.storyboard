@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLs-e4-B2o" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="87.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angel Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlB-Yj-g8Z">
-                                                <rect key="frame" x="144.5" y="29" width="125" height="31"/>
+                                                <rect key="frame" x="144.5" y="29" width="125" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -38,11 +38,12 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-60-TMf" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="121" width="414" height="553"/>
+                                        <rect key="frame" x="0.0" y="119.5" width="414" height="554.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angelcardback" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1T-Wp-kCL">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angelcardback" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1T-Wp-kCL">
                                                 <rect key="frame" x="8" y="36" width="398" height="480"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <viewLayoutGuide key="safeArea" id="gwr-Ls-MdY"/>
                                             </imageView>
                                         </subviews>
                                     </view>
@@ -105,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66.666666666666671" y="127.23214285714285"/>
+            <point key="canvasLocation" x="-66.964285714285708" y="126.08695652173914"/>
         </scene>
     </scenes>
     <resources>

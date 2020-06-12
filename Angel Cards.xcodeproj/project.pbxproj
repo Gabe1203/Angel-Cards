@@ -14,6 +14,9 @@
 		007C2F94248875FB0039D61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007C2F93248875FB0039D61B /* Assets.xcassets */; };
 		007C2F97248875FB0039D61B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007C2F95248875FB0039D61B /* LaunchScreen.storyboard */; };
 		00BC55982489B6120087ACB0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 00BC55972489B6120087ACB0 /* README.md */; };
+		00CC524D2493040A00B8786A /* flipCard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00CC524C2493040A00B8786A /* flipCard.mp3 */; };
+		00CC524F249307A500B8786A /* harp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00CC524E249307A500B8786A /* harp.mp3 */; };
+		00CC5251249307FD00B8786A /* mystery.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00CC5250249307FD00B8786A /* mystery.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		007C2F96248875FB0039D61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007C2F98248875FB0039D61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BC55972489B6120087ACB0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		00CC524C2493040A00B8786A /* flipCard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = flipCard.mp3; path = "../../../../../Downloads/Card-flip-sound-effect/flipCard.mp3"; sourceTree = "<group>"; };
+		00CC524E249307A500B8786A /* harp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = harp.mp3; path = ../../../../../Downloads/harp.mp3; sourceTree = "<group>"; };
+		00CC5250249307FD00B8786A /* mystery.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mystery.mp3; path = ../../../../../Downloads/mystery.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		007C2F89248875F90039D61B /* Angel Cards */ = {
 			isa = PBXGroup;
 			children = (
+				00CC524B249303FB00B8786A /* Sounds */,
 				007C2F8A248875F90039D61B /* AppDelegate.swift */,
 				007C2F8C248875F90039D61B /* SceneDelegate.swift */,
 				007C2F8E248875F90039D61B /* ViewController.swift */,
@@ -68,6 +75,16 @@
 				007C2F98248875FB0039D61B /* Info.plist */,
 			);
 			path = "Angel Cards";
+			sourceTree = "<group>";
+		};
+		00CC524B249303FB00B8786A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				00CC5250249307FD00B8786A /* mystery.mp3 */,
+				00CC524E249307A500B8786A /* harp.mp3 */,
+				00CC524C2493040A00B8786A /* flipCard.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +145,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CC524D2493040A00B8786A /* flipCard.mp3 in Resources */,
 				007C2F97248875FB0039D61B /* LaunchScreen.storyboard in Resources */,
 				007C2F94248875FB0039D61B /* Assets.xcassets in Resources */,
+				00CC524F249307A500B8786A /* harp.mp3 in Resources */,
+				00CC5251249307FD00B8786A /* mystery.mp3 in Resources */,
 				00BC55982489B6120087ACB0 /* README.md in Resources */,
 				007C2F92248875F90039D61B /* Main.storyboard in Resources */,
 			);

@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     // Displays back of card and changes the value of angelCard
     @IBAction func pickANewCard(_ sender: UIButton) {
         playSound(soundName: "mystery")
+        reduceOpacity(sender: sender)
         angelCardImage.image = angelCardBackGround
         flipped = false
         angelCard = UIImage(named: "\(arc4random_uniform(19) + 1)")!
@@ -34,16 +35,33 @@ class ViewController: UIViewController {
     // Will flip from the back of the card to the front
     // Does not flip back right now
     @IBAction func flipCard(_ sender: UIButton) {
+        var newImage: UIImage
+        var soundName: String
         if !flipped {
-            angelCardImage.image = angelCard
+            newImage = angelCard
+            soundName = "harp"
             flipped = true
-            playSound(soundName: "harp")
+            
         } else {
-            angelCardImage.image = angelCardBackGround
+            newImage = angelCardBackGround
+            soundName = "flipCard"
             flipped = false
-            playSound(soundName: "flipCard")
         }
+        playSound(soundName: soundName)
+        reduceOpacity(sender: sender)
+        angelCardImage.image = newImage
         
+    }
+    
+    func reduceOpacity(sender: UIButton){
+        //Reduces the sender's (the button that got pressed) opacity to half.
+        sender.alpha = 0.5
+
+        //Code should execute after 0.2 second delay.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            //Bring's sender's opacity back up to fully opaque.
+            sender.alpha = 1.0
+        }
     }
     
     func playSound(soundName: String) {
